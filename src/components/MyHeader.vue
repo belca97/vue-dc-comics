@@ -3,7 +3,7 @@
         <header>
             <div class="container">
                 <div class="logo-header">
-                    <img src="assets/dc-logo.png" alt="">
+                    <img src="../assets/dc-logo.png" alt="">
                 </div>
 
                 <div class="menu-header">
@@ -41,6 +41,7 @@ export default {
     .container{
         width: 70%;
         margin: 0 auto;
+        display: flex;
     }
     .container::after{
         clear: both;
@@ -52,13 +53,15 @@ export default {
         width: 10%;
     }
     .logo-header img{
-        width: 100%;
-        height: 50px;
+        width: 100px;
+        height: 100px;
     }
     .menu-header{
         float: right;
         width: 90%;
         text-align: right;
+        display: flex;
+        align-items: center;
     }
     ul li{
         display: inline-block;

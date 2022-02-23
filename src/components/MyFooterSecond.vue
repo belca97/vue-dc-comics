@@ -37,7 +37,10 @@
                   <li>DC</li>
                   <li>DC</li>
                   <li>DC</li>
-              </ul> 
+              </ul>
+              <div>
+                  <img src="../assets/dc-logo-bg.png" alt="">
+              </div>
 
       </div>
   </footer>
@@ -57,6 +60,13 @@ export default {
     .container{
         width: 70%;
         padding: 30px 0px;
+        position: relative;
+    }
+
+    img{
+        position: absolute;
+        left: 70%;
+        top: -20%;
     }
 
     ul{

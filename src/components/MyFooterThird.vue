@@ -37,9 +37,11 @@ export default {
 
     footer{
         background-color: rgb(48, 45, 45);
-        height: 150px;
+        height: 160px;
         color: $colorFooterThird;
         font-weight: bold;
+        position: relative;
+        z-index: 1000;
     }
 
     .container{
