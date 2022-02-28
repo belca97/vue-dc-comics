@@ -1,32 +1,4 @@
-<template>
-    <main>
-    <div class="container">
-
-        <MyHeroCard v-for='(card, index) in cards' :key="index"
-        :series="card.series"
-        :thumb="card.thumb"
-        ></MyHeroCard>
-        <div class="container-button">
-            <button>LOAD MORE</button>
-        </div>
-    </div>
-    </main>
-</template>
-
-<script>
-
-   import MyHeroCard from './partials/MyHeroCard.vue'
-
-export default {
-
-  name: 'MyMain',
-  components :{
-      MyHeroCard
-  },
-  data (){
-
-      return{
-          cards: [
+[
   {
     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
     "price": "$19.99",
@@ -100,45 +72,3 @@ export default {
     "type": "graphic novel"
   }
 ]
-      }
-
-  }
-}
-</script>
-
-<style scoped lang='scss'>
-
-  @import "../assets/style/variable.scss";
-
-    main{
-        background-color: rgb(48, 45, 45);
-        color: white;
-        height: 150px;
-        height: 900px;
-    }
-
-    .container{
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 50px;
-        align-items: center;
-        justify-content: center;
-    }
-    .box-img{
-        min-height: 350px;
-        margin: 10px 15px;
-        width: 13%;
-    }
-    .box-img img{
-        width: 100%;
-    }
-    button{
-     font-size: 20px;
-     background-color:  $colorFooterFirst;
-     color: white;
-     padding: 10px 32px;
-     border: 1px solid $colorFooterFirst;        
-    }
-</style>
